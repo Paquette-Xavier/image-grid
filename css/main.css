@@ -16,3 +16,17 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+section img:nth-child(2),
+section img:nth-child(5) {
+  display: none;
+}
