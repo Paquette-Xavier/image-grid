@@ -30,3 +30,52 @@ section img:nth-child(2),
 section img:nth-child(5) {
   display: none;
 }
+
+@media only screen and (min-width: 25em) {
+
+  section img:nth-child(2),
+  section img:nth-child(5) {
+    display: block;
+    width: 50%;
+    float: left;
+  }
+
+  section img:nth-child(3),
+  section img:nth-child(4) {
+    width: 50%;
+    float: left;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  section img:nth-child(5) {
+    display: none;
+  }
+
+  section img:nth-child(2),
+  section img:nth-child(3),
+  section img:nth-child(4) {
+    width: 33.3333%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  section img:first-child {
+    float: left;
+    width: 66.6666%;
+  }
+
+  section img:nth-child(2),
+  section img:nth-child(3),
+  section img:nth-child(4),
+  section img:nth-child(5) {
+    width: 33.3333%;
+    float: left;
+    display: block;
+  }
+
+}
